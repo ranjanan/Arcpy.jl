@@ -10,7 +10,7 @@ GetRasterProperties_management(x, y) = arcpy.GetRasterProperties_management(x, y
 getOutput(x, i) = x[:getOutput](i)
 
 AddMessage(str) = arcpy.AddMessage(str)
-setenv(var, val) = (acrpy.env[Symbol(var)] = val)
+setenv(var, val) = (arcpy.env[Symbol(var)] = val)
 
 for f in (:FeatureClassToFeatureClass_conversion, 
 		:Dissolve_management, :Delete_management, 
